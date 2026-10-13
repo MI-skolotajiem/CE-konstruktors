@@ -1,0 +1,21 @@
+LATVIEŠU VALODAS CE PROMPTU KONSTRUKTORS
+
+Modeļneatkarīga, viena HTML faila aplikācija. Tā nesazinās ar MI pakalpojumiem, neizmanto API, serveri vai API atslēgu.
+
+DARBA PLŪSMA
+1. Avots un iestatījumi: ielīmē pilnu avota tekstu un izvēlies uzdevuma parametrus.
+2. Metodiskās atlases prompts: izveido, nokopē un nosūti promptu ChatGPT, Claude, Gemini vai Copilot.
+3. Trīs kandidāti: nokopē visu MI atbildi un ielīmē to laukā “Ielīmē MI atbildi”. Aplikācija automātiski atpazīs kandidātus un parādīs tos kartītēs.
+4. Kandidāta izvēle: izvēlies vienu kandidātu. Gala uzdevuma sadaļa atvērsies automātiski.
+5. Gala prompta izveide: pārskati izvēles kopsavilkumu, nokopē gala promptu un nosūti to izvēlētajam MI rīkam.
+6. Gatavs CE uzdevums: MI atbildē izveidos vienu CE uzdevumu ar atbildi, punktiem, vērtēšanas kritērijiem un metodisko pamatojumu.
+
+KANDIDĀTU FORMĀTS
+Atlases prompts lūdz MI atbildēt ar trim blokiem, kas sākas ar “1. KANDIDĀTS”, “2. KANDIDĀTS”, “3. KANDIDĀTS”. Katrā blokā jābūt laukiem Joma, Objekts, Darbības, Forma, Prasme un Pamatojums. Parseris pieņem arī “1. kandidāts”, “Kandidāts 1” un Markdown virsrakstus, kā arī treknrakstā noformētus lauku nosaukumus.
+Ja automātiskā atpazīšana neizdodas, pārbaudi, vai ielīmēta visa MI atbilde, vai atver manuālo ievadi.
+
+MANUĀLAIS REŽĪMS
+Lai izveidotu gala promptu bez MI kandidātu atlases, izvēlies jomu un objektu un nospied “Gala prompts bez 3 kandidātu atlases”. Manuālos kandidātus vari ievadīt sadaļā “Neizdevās automātiski atpazīt? Ievadīt manuāli”.
+
+LIETOŠANA BEZ SERVERA
+Atarhivē ZIP un atver index.html pārlūkā. Aplikācijai nav ārēju bibliotēku vai servera prasību. MI rīki atveras jaunā pārlūka cilnē. Avota tekstu izvēlētajam MI nosūti pats, nokopējot aplikācijas izveidoto promptu.
